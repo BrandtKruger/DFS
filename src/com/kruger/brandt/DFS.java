@@ -23,6 +23,18 @@ public class DFS {
         }
     }
 
+    private void dfsRecursive(Vertex vertex){
+        System.out.println(v + " ");
+
+        for (Vertex v: vertex.getNeighbourList()){
+
+            if (!v.isVisted()){
+                v.setVisted(true);
+                dfsRecursive(v);
+            }
+        }
+    }
+
     private void dfsWithStack(Vertex rootVertex) {
 
         this.stack.add(rootVertex);
