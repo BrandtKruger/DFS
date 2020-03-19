@@ -18,7 +18,7 @@ public class DFS {
 
             if (!v.isVisted()){
                 v.setVisted(true);
-                dfsWithStack(v);
+                dfsRecursive(v);
             }
         }
     }
