@@ -24,7 +24,7 @@ public class DFS {
     }
 
     private void dfsRecursive(Vertex vertex){
-        System.out.println(v + " ");
+        System.out.println(vertex + " ");
 
         for (Vertex v: vertex.getNeighbourList()){
 
